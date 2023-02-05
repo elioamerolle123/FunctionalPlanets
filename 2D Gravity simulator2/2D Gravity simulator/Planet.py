@@ -20,7 +20,7 @@ class Planet:
 
         pygame.draw.circle(self.surface, (100 - 0.5 * self.r, 100 - 0.5 * self.density, 255 - (self.r + self.density)), (self.x, self.y), self.r)
 
-    def gravity(self, fors, Acc):
+    def gravity(self, Acc, fors):
 
         accMag = math.sqrt(fors[0] ** 2 + fors[1] ** 2)/self.mass
 
